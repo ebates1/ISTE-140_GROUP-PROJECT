@@ -1,8 +1,23 @@
+/* constants used in project (colors, sizes, etc..) */
 @import "base/constants";
+
+/* mixins (encapsulate styles that can be dropped into a single style rule) */
+@import "base/mixins";
+
+/* typography (colors, font-size, etc..) */
 @import "base/typography";
+
+/* base level styling */
 @import "base/base";
-@import "base/classes";
+
+/* custom css classes */
+@import "base/class/components";
+@import "base/class/utilities";
+@import "base/class/colors";
+
+/* bootstrap override */
 @import "base/bootstrap";
+
 @import "base/color-sel-icons";
 @import "base/toggle-btn";
 @import "base/id";

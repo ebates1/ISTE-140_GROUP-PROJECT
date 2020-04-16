@@ -29,8 +29,7 @@ h6 {
 }
 
 p {
-    font-family: Roboto;
-    font-size: $font-size-default;
+    @include default-font;
     line-height: 1.8em;
 }
 
@@ -38,21 +37,18 @@ p {
 .nav-link,
 .dropdown-toggle,
 .dropdown-item {
-    font-family: Roboto;
-    font-size: $font-size-default;
+    @include default-font;
     line-height: 1.8em;
     font-weight: bold;
     color: black !important;
 }
 
 footer {
-    font-size: $font-size-default;
-    font-family: Roboto;
+    @include default-font;
     color: $medium-grey;
 
     a {
-        font-size: $font-size-default;
-        font-family: Roboto;
+        @include default-font;
         font-weight: bold;
         color: white;
     

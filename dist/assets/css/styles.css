@@ -1,3 +1,6 @@
+/* constants used in project (colors, sizes, etc..) */
+/* mixins (encapsulate styles that can be dropped into a single style rule) */
+/* typography (colors, font-size, etc..) */
 h1,
 h2,
 h3,
@@ -39,12 +42,12 @@ p {
   color: black !important; }
 
 footer {
-  font-size: 0.8rem;
   font-family: Roboto;
+  font-size: 0.8rem;
   color: #BDC6CF; }
   footer a {
-    font-size: 0.8rem;
     font-family: Roboto;
+    font-size: 0.8rem;
     font-weight: bold;
     color: white; }
     footer a:hover {
@@ -54,6 +57,7 @@ footer {
     font-size: 0.8rem;
     color: white; }
 
+/* base level styling */
 footer {
   background-color: #43484D; }
   footer a {
@@ -63,25 +67,12 @@ footer {
   footer li {
     padding-bottom: 0.7rem; }
 
-/** CUSTOM CSS CLASSES**/
-.light-blue {
-  background-color: #F1F9FF; }
-
-.light-grey {
-  background-color: #F3F3F3; }
-
+/* custom css classes */
 .product-image {
   height: 250px;
   width: 100%;
   border-radius: 10px;
   background-color: #F3F3F3; }
-
-.mt-n7 {
-  margin-top: -7rem; }
-
-.my-6 {
-  margin-top: 6em;
-  margin-bottom: 6em; }
 
 .btn-primary {
   background: black;
@@ -99,6 +90,20 @@ a:hover {
   transition-timing-function: ease-in-out;
   cursor: pointer; }
 
+.mt-n7 {
+  margin-top: -7rem; }
+
+.my-6 {
+  margin-top: 6em;
+  margin-bottom: 6em; }
+
+.light-blue {
+  background-color: #F1F9FF; }
+
+.light-grey {
+  background-color: #F3F3F3; }
+
+/* bootstrap override */
 /** OVERRIDE BOOTSTRAP CLASSES**/
 .sidebar ul a {
   font-size: 0.8rem;

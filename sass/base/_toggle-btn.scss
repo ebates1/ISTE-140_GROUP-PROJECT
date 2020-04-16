@@ -12,8 +12,7 @@ label.btn.btn-secondary.mr-3.px-4.rounded.active {
 .btn-outline-secondary {
     border: 2px solid black;
     color: black;
-    font-family: Roboto;
-    font-size: $font-size-default;
+    @include default-font;
 }
 
 
@@ -36,8 +35,7 @@ label.btn.btn-secondary.mr-3.px-4.rounded {
 }
 
 .address {
-    font-family: Roboto;
-    font-size: $font-size-default;
+    @include default-font;
     font-weight: 500;
     color: black;
     display: block;
