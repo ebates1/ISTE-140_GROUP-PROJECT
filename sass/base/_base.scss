@@ -1,0 +1,15 @@
+footer {
+    background-color: $dark-grey;
+
+    a {
+        background-color: $dark-grey;
+
+        .list-unstyled {
+            display: none;
+        }
+    }
+
+    li {
+        padding-bottom: 0.7rem;
+    }
+}

@@ -1,0 +1,53 @@
+/** OVERRIDE BOOTSTRAP CLASSES**/
+
+.sidebar ul a {
+    font-size: $font-size-default;
+    font-weight: 600;
+    color: black;
+    padding: 1em;
+}
+
+.card a:hover {
+    color: black;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: $font-size-default;
+}
+
+.product-link {
+    color: black;
+    font-weight: 600;
+
+    :hover {
+        text-decoration: none;
+    }
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.jumbotron,
+.jumbotron-fluid {
+    margin-bottom: 0;
+}
+
+.form-control {
+    font-size: $font-size-default;
+}
+
+.card {
+    font-size: $font-size-default;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: black;
+    border: 4px solid $light-grey;
+}

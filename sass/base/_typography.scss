@@ -1,0 +1,69 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: $font-size-default;
+}
+
+p {
+    font-family: Roboto;
+    font-size: $font-size-default;
+    line-height: 1.8em;
+}
+
+.nav-item,
+.nav-link,
+.dropdown-toggle,
+.dropdown-item {
+    font-family: Roboto;
+    font-size: $font-size-default;
+    line-height: 1.8em;
+    font-weight: bold;
+    color: black !important;
+}
+
+footer {
+    font-size: $font-size-default;
+    font-family: Roboto;
+    color: $medium-grey;
+
+    a {
+        font-size: $font-size-default;
+        font-family: Roboto;
+        font-weight: bold;
+        color: white;
+    
+        &:hover {
+            text-decoration: none;
+            color: $medium-grey;
+        }
+    }
+
+    h6 {
+        font-size: $font-size-default;
+        color: white;
+    }
+}

@@ -1,0 +1,44 @@
+/** CUSTOM CSS CLASSES**/
+
+.light-blue {
+    background-color: $light-blue;
+}
+
+.light-grey {
+    background-color: $light-grey;
+}
+
+.product-image {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $light-grey;
+}
+
+.mt-n7 {
+    margin-top: -7rem;
+}
+
+.my-6 {
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.btn-primary {
+    background: black;
+    font-family: Roboto;
+    font-size: $font-size-default;
+    border: none;
+}
+
+.card {
+    border: none;
+}
+
+.card:hover,
+.btn:hover,
+a:hover {
+    transform: scale(1.05);
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}

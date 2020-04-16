@@ -1,0 +1,41 @@
+/** COLOR SELECTION ICONS**/
+
+.custom-radios input[type="radio"] {
+    display: none;
+  
+    + label span {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: -1px 4px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      line-height: 44px;
+      margin-right: 0.5em;
+    }
+  
+    &#color-1 + label span {
+      background-color: black;
+    }
+  
+    &#color-2 + label span {
+      background-color: $light-grey;
+    }
+  
+    &#color-3 + label span {
+      background-color: $medium-grey;
+    }
+  
+    &:checked + label span {
+      opacity: 1;
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat;
+      width: 50px;
+      height: 50px;
+    }
+  }

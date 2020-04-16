@@ -1,0 +1,48 @@
+/** TOGGLE BUTTON STYLES **/
+
+
+/** ACTIVE **/
+
+label.btn.btn-secondary.mr-3.px-4.rounded.active {
+    background-color: $light-grey;
+    color: black;
+    border: 0;
+}
+
+.btn-outline-secondary {
+    border: 2px solid black;
+    color: black;
+    font-family: Roboto;
+    font-size: $font-size-default;
+}
+
+
+/** NON ACTIVE **/
+
+label.btn.btn-secondary.mr-3.px-4.rounded {
+    background-color: white;
+    color: black;
+    border: 2px solid $light-grey;
+}
+
+.txt-medium-grey {
+    color: $medium-grey;
+}
+
+.question {
+    color: $dark-grey;
+    font-weight: 500;
+    ;
+}
+
+.address {
+    font-family: Roboto;
+    font-size: $font-size-default;
+    font-weight: 500;
+    color: black;
+    display: block;
+}
+
+.blog-article-name {
+    font-weight: 500;
+}
