@@ -1,6 +1,22 @@
 /* constants used in project (colors, sizes, etc..) */
 /* mixins (encapsulate styles that can be dropped into a single style rule) */
 /* typography (colors, font-size, etc..) */
+footer {
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+  color: #BDC6CF; }
+  footer a {
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white; }
+    footer a:hover {
+      text-decoration: none;
+      color: #BDC6CF; }
+  footer h6 {
+    font-size: 0.8rem;
+    color: white; }
+
 h1,
 h2,
 h3,
@@ -27,7 +43,7 @@ h6 {
   font-size: 0.8rem; }
 
 p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 0.8rem;
   line-height: 1.8em; }
 
@@ -35,27 +51,11 @@ p {
 .nav-link,
 .dropdown-toggle,
 .dropdown-item {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 0.8rem;
   line-height: 1.8em;
   font-weight: bold;
   color: black !important; }
-
-footer {
-  font-family: Roboto;
-  font-size: 0.8rem;
-  color: #BDC6CF; }
-  footer a {
-    font-family: Roboto;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: white; }
-    footer a:hover {
-      text-decoration: none;
-      color: #BDC6CF; }
-  footer h6 {
-    font-size: 0.8rem;
-    color: white; }
 
 /* base level styling */
 footer {
@@ -76,7 +76,7 @@ footer {
 
 .btn-primary {
   background: black;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 0.8rem;
   border: none; }
 
@@ -103,7 +103,7 @@ a:hover {
 .light-grey {
   background-color: #F3F3F3; }
 
-/* bootstrap override */
+/* bootstrap overrides */
 /** OVERRIDE BOOTSTRAP CLASSES**/
 .sidebar ul a {
   font-size: 0.8rem;
@@ -185,7 +185,7 @@ label.btn.btn-secondary.mr-3.px-4.rounded.active {
 .btn-outline-secondary {
   border: 2px solid black;
   color: black;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 0.8rem; }
 
 /** NON ACTIVE **/
@@ -202,7 +202,7 @@ label.btn.btn-secondary.mr-3.px-4.rounded {
   font-weight: 500; }
 
 .address {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
   color: black;

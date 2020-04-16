@@ -1,0 +1,9 @@
+.nav-item,
+.nav-link,
+.dropdown-toggle,
+.dropdown-item {
+    @include default-font;
+    line-height: 1.8em;
+    font-weight: bold;
+    color: black !important;
+}

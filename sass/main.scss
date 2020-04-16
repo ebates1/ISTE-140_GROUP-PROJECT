@@ -5,7 +5,9 @@
 @import "base/mixins";
 
 /* typography (colors, font-size, etc..) */
-@import "base/typography";
+@import "base/typography/typography-footer"; //footer
+@import "base/typography/typography-base";   //base
+@import "base/typography/typography-nav";    //navigation
 
 /* base level styling */
 @import "base/base";
@@ -15,7 +17,7 @@
 @import "base/class/utilities";
 @import "base/class/colors";
 
-/* bootstrap override */
+/* bootstrap overrides */
 @import "base/bootstrap";
 
 @import "base/color-sel-icons";
