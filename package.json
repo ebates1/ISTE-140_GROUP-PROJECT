@@ -1,0 +1,22 @@
+{
+  "name": "iste-140_group-project",
+  "version": "1.0.0",
+  "description": "intertal media web store for ISTE-140 class group project at Rochester Institute of Technology",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss dist/assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emb2065/ISTE-140_GROUP-PROJECT.git"
+  },
+  "author": "Eli, Carlos, Evgeniya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emb2065/ISTE-140_GROUP-PROJECT/issues"
+  },
+  "homepage": "https://github.com/emb2065/ISTE-140_GROUP-PROJECT#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

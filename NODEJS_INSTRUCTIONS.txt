@@ -1,0 +1,8 @@
+install node.js on:   https://nodejs.org/en/download/
+
+Next:
+open terminal in vscode, ensure you are in the project directory
+
+run command: npm install
+
+You will now get a folder in the directory called "node_modules" this is the deps for the project you can ignore it, but the project will use

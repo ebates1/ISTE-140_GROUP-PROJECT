@@ -1,0 +1,293 @@
+/** VARIABLES **/
+
+:root {
+    --light-blue: #F1F9FF;
+    --light-grey: #F3F3F3;
+    --medium-grey: #BDC6CF;
+    --dark-grey: #43484D;
+}
+
+
+/** ELEMENTS **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+}
+
+.nav-item,
+.nav-link,
+.dropdown-toggle,
+.dropdown-item {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+    font-weight: bold;
+    color: black !important;
+}
+
+footer {
+    background-color: var(--dark-grey);
+    font-size: 0.8rem;
+    color: var(--medium-grey);
+    font-family: Roboto;
+
+    a {
+        background-color: var(--dark-grey);
+        font-size: 0.8rem;
+        color: var(--medium-grey);
+        font-family: Roboto;
+        font-weight: bold;
+        color: white;
+    
+        :hover {
+            text-decoration: none;
+            color: var(--medium-grey)
+        }
+    
+        li {
+            padding-bottom: 0.7rem;
+        }
+    
+        .list-unstyled {
+            display: none;
+        }
+    }
+    
+    h6 {
+        font-size: 0.8rem;
+        color: white;
+    }
+
+}
+
+/** OVERRIDE BOOTSTRAP CLASSES**/
+
+.sidebar ul a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    padding: 1em;
+}
+
+.card a:hover {
+    color: black;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.product-link {
+    color: black;
+    font-weight: 600;
+
+    :hover {
+        text-decoration: none;
+    }
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.jumbotron,
+.jumbotron-fluid {
+    margin-bottom: 0;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+.card {
+    font-size: 0.8rem;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: black;
+    border: 4px solid var(--light-grey);
+}
+
+
+/** CUSTOM CSS CLASSES**/
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.light-grey {
+    background-color: var(--light-grey);
+}
+
+.product-image {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--light-grey);
+}
+
+.mt-n7 {
+    margin-top: -7rem;
+}
+
+.my-6 {
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.btn-primary {
+    background: black;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.card {
+    border: none;
+}
+
+.card:hover,
+.btn:hover,
+a:hover {
+    transform: scale(1.05);
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+/** IDS **/
+
+#carousel-background {
+    height: 50vh;
+}
+
+
+/** COLOR SELECTION ICONS**/
+
+.custom-radios input[type="radio"] {
+    display: none;
+}
+
+.custom-radios input[type="radio"]+label span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+    margin-right: 0.5em;
+}
+
+.custom-radios input[type="radio"]#color-1+label span {
+    background-color: black;
+}
+
+.custom-radios input[type="radio"]#color-2+label span {
+    background-color: var(--light-grey);
+}
+
+.custom-radios input[type="radio"]#color-3+label span {
+    background-color: var(--medium-grey);
+}
+
+.custom-radios input[type="radio"]:checked+label span {
+    opacity: 1;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+
+/** TOGGLE BUTTON STYLES **/
+
+
+/** ACTIVE **/
+
+label.btn.btn-secondary.mr-3.px-4.rounded.active {
+    background-color: var(--light-grey);
+    color: black;
+    border: 0;
+}
+
+.btn-outline-secondary {
+    border: 2px solid black;
+    color: black;
+    font-family: Roboto;
+    font-size: 0.8rem;
+}
+
+
+/** NON ACTIVE **/
+
+label.btn.btn-secondary.mr-3.px-4.rounded {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--light-grey);
+}
+
+.txt-medium-grey {
+    color: var(--medium-grey)
+}
+
+.question {
+    color: var(--dark-grey);
+    font-weight: 500;
+    ;
+}
+
+.address {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+    display: block;
+}
+
+.blog-article-name {
+    font-weight: 500;
+}
