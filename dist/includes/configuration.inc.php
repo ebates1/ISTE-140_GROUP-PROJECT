@@ -18,7 +18,7 @@
 
   $bootstrapCss = "{$libraryPath}bootstrap-css.inc.php";
   $bootstrapScripts = "{$libraryPath}bootstrap-scripts.inc.php";
-  $googleApisCss = "{$libraryPath}googleapis-css.inc.php";
+  $googleApisCss = "{$libraryPath}googleApis-css.inc.php";
   $fontAwesomeScript = "{$libraryPath}fontAwesome-scripts.inc.php";
 
 ?>
