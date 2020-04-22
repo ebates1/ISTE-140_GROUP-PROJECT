@@ -1,7 +1,7 @@
 {
   "name": "iste-140_group-project",
   "version": "1.0.0",
-  "description": "intertal media web store for ISTE-140 class group project at Rochester Institute of Technology",
+  "description": "intertial media web store for ISTE-140 class group project at Rochester Institute of Technology",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss dist/assets/css/styles.css -w"
