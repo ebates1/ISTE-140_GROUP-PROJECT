@@ -13,7 +13,7 @@
 
   //Files variables
   $meta = "{$docSectionPath}html-meta.inc.php";
-  $header = "{$docSectionPath}header.inc.php";
+  $navigation = "{$docSectionPath}navigation.inc.php";
   $footer = "{$docSectionPath}footer.inc.php";
 
   $bootstrapCss = "{$libraryPath}bootstrap-css.inc.php";
