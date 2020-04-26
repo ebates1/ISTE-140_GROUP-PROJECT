@@ -63,7 +63,7 @@
 
 
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="cart.html">Shopping Cart
+                    <a class="nav-link" href="cart.php">Shopping Cart
                     <i class="pl-3 fas fa-shopping-cart"></i>
                     </a>
                 </li>

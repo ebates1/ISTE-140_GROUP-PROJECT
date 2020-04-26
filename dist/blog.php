@@ -33,28 +33,28 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="products.php">Products</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="blog.php">Blog</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
 
                 <li class="nav-item px-2 dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown08">
-                        <a class="dropdown-item" href="shipping.html">Shipping</a>
-                        <a class="dropdown-item" href="return.html">Return</a>
-                        <a class="dropdown-item" href="delivery.html">Delivery</a>
-                        <a class="dropdown-item" href="payment.html">Payment</a>
+                        <a class="dropdown-item" href="shipping.php">Shipping</a>
+                        <a class="dropdown-item" href="return.php">Return</a>
+                        <a class="dropdown-item" href="delivery.php">Delivery</a>
+                        <a class="dropdown-item" href="payment.php">Payment</a>
                     </div>
                 </li>
 
@@ -142,7 +142,7 @@
                 <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
                     <img src="assets/img/blogimages/blog-image6.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
                     <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
-                    <a class="btn btn-primary px-4 " href="cart.html">Read more</a>
+                    <a class="btn btn-primary px-4 " href="cart.php">Read more</a>
                 </div>
                 <!-- ONE BLOG POST END -->
 
