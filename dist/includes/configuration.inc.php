@@ -21,4 +21,7 @@
   $googleApisCss = "{$libraryPath}googleApis-css.inc.php";
   $fontAwesomeScript = "{$libraryPath}fontAwesome-scripts.inc.php";
 
+  $db_conn = 'includes/dbconn.inc.php';
+  $product = 'includes/product.inc.php';
+
 ?>

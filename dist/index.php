@@ -1,4 +1,10 @@
-<?php require("includes/configuration.inc.php"); ?>
+<?php 
+require("includes/configuration.inc.php"); 
+include($db_conn); 
+include($product); 
+
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -60,27 +66,27 @@
 
             <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-4 border-right">
                 <img class="mb-3" src="assets/img/icons/thermometer.svg" alt="camera icon">
-                <h6 class="txt-medium-grey">Cameras</h6>
+                <h6 class="txt-medium-grey">Thermostats</h6>
             </div>
 
             <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-4 border-right">
                 <img class="mb-3" src="assets/img/icons/cil_lightbulb.svg" alt="camera icon">
-                <h6 class="txt-medium-grey">Cameras</h6>
+                <h6 class="txt-medium-grey">Lighting</h6>
             </div>
 
             <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-4 border-right">
                 <img class="mb-3" src="assets/img/icons/monitor.svg" alt="camera icon">
-                <h6 class="txt-medium-grey">Cameras</h6>
+                <h6 class="txt-medium-grey">Monitors</h6>
             </div>
 
             <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-4 border-right">
                 <img class="mb-3" src="assets/img/icons/jam_watch.svg" alt="camera icon">
-                <h6 class="txt-medium-grey">Cameras</h6>
+                <h6 class="txt-medium-grey">Watches</h6>
             </div>
 
             <div class="col-md-2 d-flex flex-column justify-content-center align-items-center p-4">
                 <img class="mb-3" src="assets/img/icons/bx_bx-lock-open.svg" alt="camera icon">
-                <h6 class="txt-medium-grey">Cameras</h6>
+                <h6 class="txt-medium-grey">Security</h6>
             </div>
         </div>
     </div>
@@ -93,111 +99,23 @@
     <div class="container my-5 ">
 
         <div class="row ">
+        <?php
+            $sql = "SELECT * FROM product ORDER BY productId DESC;";
+            $result = mysqli_query(connectDB(), $sql);
+            $checkResults = mysqli_num_rows($result);
 
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-1.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-2.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-3.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-4.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-1.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-2.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-3.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
-            <!-- PRODUCT CARD -->
-
-            <div class="card col-lg-3 col-md-6 ">
-
-                <img src="assets/img/product-4.png " class="card-img-top " alt="product image ">
-                <div class="card-body ">
-                    <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                    <div class="product-price ">$ 199</div>
-                    <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                </div>
-
-            </div>
-
+            if ($checkResults > 0) {
+                $counter = 0;
+                while ($row = mysqli_fetch_assoc($result)) {
+                    getProductHomePage($row['productId'], $row['productName'], $row['productCost'], $row['productImgUrl']);
+                    $counter++;
+                    if ($counter == 10)
+                        break;
+                }
+            } else {
+                echo "No products to load at this time. Please check back later!";
+            }
+            ?>
         </div>
 
         <div class="row justify-content-center my-5 pb-5 ">
@@ -220,7 +138,6 @@
                     <img src="assets/img/article-jumbotron-image.png " class="img-fluid mt-n7 " alt="Responsive image ">
 
                 </div>
-
 
                 <div class="col-lg-6 p-5 ">
                     <h2 class="mb-4 ">Lorem ipsum dolor sit amet</h2>
