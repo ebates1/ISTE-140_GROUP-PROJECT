@@ -1,12 +1,16 @@
 const reg_name = /^([a-zA-Z \-.\'.\_]+)$/;
 const reg_comment = /[a-zA-Z0-9@=\-'"]+/;
 const reg_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const reg_phone = /^(\(?\+?[0-9]*\)?)?[0-9_\- \(\)]*$/;
 
 function validateForm() {
     const fieldCheck = [];
     fieldCheck.push(validate('commentArea', 'comment', 10, 255));
     fieldCheck.push(validate('fname', 'name', 1, 25));
     fieldCheck.push(validate('lname', 'name', 1, 25));
+    fieldCheck.push(validate('phone', 'phone', 8, 15));
+    fieldCheck.push(validate('email', 'email', 3, 30));
+
     return (!fieldCheck.includes(false));
 }
 
@@ -31,6 +35,19 @@ function validate(id, type, minLength, maxLength) {
                 sendError(id, "form-error", "Invalid character not allowed...");
                 return false;
             }
+            break;
+            case 'phone':
+                if (!reg_phone.test(value)) {
+                    sendError(id, "form-error", "Invalid character not allowed...");
+                    return false;
+                }
+            break;
+
+            case 'email':
+                if (!reg_email.test(value)) {
+                    sendError(id, "form-error", "Invalid character not allowed...");
+                    return false;
+                }
             break;
         default:
             return false;
