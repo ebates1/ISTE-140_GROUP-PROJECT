@@ -64,25 +64,25 @@ include($product);
             <div class="row">
                 <div class="col-md-6">
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Payment methods you can use.</h5>
+                    <p>American Express, MasterCard, Visa, Discover (U.S. only), JCB (Japan and U.S. only). Visa Electron (outside the U.S. only), and PayPal.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Payment methods you can't use.</h5>
+                    <p>Cash, Wire transfers, bank transfers, Western Union, MoneyGram, or any Virtual Credit Cards (VCC).</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Direct Credit Terms.</h5>
+                    <p>Smart Solutions standard payment terms are 90 days.</p>
 
                 </div>
                 <div class="col-md-6">
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Due Date.</h5>
+                    <p>Due date is calculated by applying agreed terms to the latter of valid invoice presented or goods receipt date. All invoices are paid on our calculated due date.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Weekend or holidays.</h5>
+                    <p>If due date falls due during a weekend or holiday, the payment transaction is executed on the following business day.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Disagreements.</h5>
+                    <p>In case of any disagreements concerning content of invoices, full crediting is claimed along with a new corrected invoice.</p>
 
                 </div>
             </div>
