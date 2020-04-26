@@ -100,22 +100,8 @@ include($product);
 
         <div class="row ">
         <?php
-            $sql = "SELECT * FROM product ORDER BY productId DESC;";
-            $result = mysqli_query(connectDB(), $sql);
-            $checkResults = mysqli_num_rows($result);
-
-            if ($checkResults > 0) {
-                $counter = 0;
-                while ($row = mysqli_fetch_assoc($result)) {
-                    getProductHomePage($row['productId'], $row['productName'], $row['productCost'], $row['productImgUrl']);
-                    $counter++;
-                    if ($counter == 10)
-                        break;
-                }
-            } else {
-                echo "No products to load at this time. Please check back later!";
-            }
-            ?>
+            productListLoader("SELECT * FROM product ORDER BY productId DESC;", 10, "card col-lg-3 col-md-6");
+        ?>
         </div>
 
         <div class="row justify-content-center my-5 pb-5 ">
