@@ -108,23 +108,26 @@ include($product);
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Free GROUND Shipping</h5>
+                    <p>Smart Solutions offers free shipping on orders over $199 (pre-tax) in the contiguous 48 states (excluding Alaska and Hawaii). P.O Box addresses do not qualify for the free shipping offer. Heavyweight shipping charges may apply to heavy or bulky items. Shipping charges may also apply to select Direct Ship and Special Order items.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Shipping charges.</h5>
+                    <p>To determine your shipping charges, simply add items to your cart and enter your zip code. If you have met the free shipping order minimum, the 'Ground' rate OR 'Super Saver' rate will display as 'Free'.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Custom products delivery.</h5>
+                    <p>Custom products take up to 7 days to process and ship - as a result these products are excluded from any Free Shipping offers.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Orders for in-stock items.</h5>
+                    <p>Orders for in-stock items received by 5pm Eastern (Mon - Fri) are shipped the same business day. Orders received after this time ship the following business day.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Back-Ordered items.</h5>
+                    <p>Your credit card will not be billed for back-ordered items until they ship. If you choose, you may opt on the checkout page to have your entire order sent in one shipment when all purchased products become available. Back-Ordered items ship out with our Super Saver Shipping option.</p>
 
-                    <h5 class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere explicabo quas. Odio, voluptatum eos. Sit cum optio consectetur fugiat alias, culpa commodi tempora rem voluptas doloremque illum error distinctio.</p>
+                    <h5 class="my-3">Direct Ship and Special-Order Items.</h5>
+                    <p>Special-order items are not stocked in our warehouse. These items may not qualify for free shipping. Product generally ships 7-30 business days after order is placed.</p>
+
+                    <h5 class="my-3">International Orders (Including Canada).</h5>
+                    <p>Allow 1-10 business days for international deliveries depending on shipping method selected at checkout. Quotes for shipping outside the U.S. do not include any applicable duty, value-added taxes (VAT), import consumption taxes, or custom brokerage fees.</p>
 
                 </div>
             </div>
