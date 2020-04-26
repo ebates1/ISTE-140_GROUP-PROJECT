@@ -6,7 +6,7 @@
                 <div class='card-body '>
                     <h6 class='card-title '>$productName</h6>
                     <div class='product-price '>$ $price</div>
-                    <a href='#' class='product-link stretched-link '>Learn more >> </a>
+                    <a href='singleproduct.php?page=product&id=$id' class='product-link stretched-link '>Learn more >> </a>
                 </div>
         </div>";
     }

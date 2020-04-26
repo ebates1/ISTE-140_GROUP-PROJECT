@@ -1,8 +1,25 @@
 <?php 
-require("includes/configuration.inc.php"); 
-include($db_conn); 
-include($product); 
+    require("includes/configuration.inc.php"); 
+    include($db_conn); 
+    include($product); 
+?>
 
+<?php
+  if(isset($_GET['id'])) {
+    $id = filter_var($_GET["id"], FILTER_SANITIZE_STRING);
+
+    $sql = "SELECT * FROM product WHERE productId = " . $id;
+    
+    $result = mysqli_query(connectDB(), $sql);
+
+    $product = mysqli_fetch_row($result);
+    
+    if (!$product) {
+        die ('Product does not exist!');
+    }
+  } else {
+      die('url error');
+  }
 ?>
 
 <!doctype html>
@@ -10,7 +27,7 @@ include($product);
 
 <head>
     <!-- Page title -->
-    <title>Single Product</title>
+    <title><?=$product[1]?></title>
 
     <!-- Required meta tags -->
     <?php include($meta); ?>
@@ -39,18 +56,17 @@ include($product);
     <!-- END OF MAIN HEADER NAVBAR -->
 
     <!-- MAIN PRODUCT INFO -->
-
     <div class="container my-5">
         <div class="row align-items-center ">
             <div class="col-lg-6 p-5">
-                <img src="assets/img/amazon-alexa.png" class="img-fluid" alt="Responsive image">
+                <img src="assets/img/<?=$product[5]?><?=$product[0]?>.png" class="img-fluid" alt="Responsive image">
             </div>
 
             <div class="col-lg-6 d-flex flex-column align-items-start">
-                <h1 class="mb-4">Moto Smart Speaker with Amazon Alexa</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odio, nostrum doloremque ullam iste sequi perspiciatis voluptate commodi natus eum laborum provident cupiditate asperiores est sit quibusdam assumenda? Iusto, asperiores!</p>
+                <h1 class="mb-4"><?=$product[1]?></h1>
+                <p><?=$product[2]?></p>
 
-                <h4><strong>$100</strong></h4>
+                <h4><strong>$<?=$product[3]?></strong></h4>
 
                 <!-- COLOR OPTIONS-->
                 <h6>Color</h6>
