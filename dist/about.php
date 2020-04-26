@@ -66,8 +66,9 @@ include($product);
 
 
             <div class="col-lg-6 p-5 ">
-                <h2 class="mb-4 ">Lorem ipsum dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia, tenetur ipsa inventore corporis atque corrupti maiores reiciendis, aut dolorum soluta aperiam perspiciatis nesciunt vero dolor id magnam, quos consequuntur?</p>
+                <h2 class="mb-4 ">Our Short Journey</h2>
+                <p>It all started in January of 2020. This website is an example of a dynamic web store created using the PHP language. This was a project for the ISTE-140 class at RIT Croatia.</p>
+                <p>We have included several examples of dynamically loaded content which generates product cards that can take you to a dynamically loaded product page for each product. Also there is an example of a contact form which uses Recaptcha by Google to validate.</p>
             </div>
 
         </div>
@@ -80,21 +81,21 @@ include($product);
             <div class="row align-items-center ">
                 <div class="col-lg-4 p-5 d-flex flex-column align-items-center">
                     <img src="assets/img/icons/home.svg" class="img-fluid mb-2" alt="Responsive image ">
-                    <h5 class="mb-4 ">Feature One</h5>
-                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia, tenetur ipsa inventore corporis atque corrupti maiores reiciendis.</p>
+                    <h5 class="mb-4 ">Complete Home Automation</h5>
+                    <p class="text-center">Let your new smart devices automate daily tasks so you can focus on what is important.</p>
                 </div>
 
 
                 <div class="col-lg-4 p-5  d-flex flex-column align-items-center">
                     <img src="assets/img/icons/bluetooth.svg" class="img-fluid mb-2" alt="Responsive image ">
-                    <h5 class="mb-4 ">Feature Two</h5>
-                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia, tenetur ipsa inventore corporis atque corrupti maiores reiciendis.</p>
+                    <h5 class="mb-4 ">Bluetooth</h5>
+                    <p class="text-center">Control your devices with the latest bluetooth technology directly form your smart phone!</p>
                 </div>
 
                 <div class="col-lg-4 p-5 d-flex flex-column align-items-center">
                     <img src="assets/img/icons/wifi.svg" class="img-fluid mb-2" alt="Responsive image ">
-                    <h5 class="mb-4 ">Feature Three</h5>
-                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia, tenetur ipsa inventore corporis atque corrupti maiores reiciendis.</p>
+                    <h5 class="mb-4 ">Connects to your network</h5>
+                    <p class="text-center">Smart devices use your existing network to communicate. No need to have wires everywhere. </p>
                 </div>
 
             </div>

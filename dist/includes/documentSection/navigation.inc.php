@@ -28,7 +28,6 @@
                     <div class="dropdown-menu" aria-labelledby="dropdown08">
                         <a class="dropdown-item" href="shipping.php">Shipping</a>
                         <a class="dropdown-item" href="return.php">Return</a>
-                        <a class="dropdown-item" href="delivery.php">Delivery</a>
                         <a class="dropdown-item" href="payment.php">Payment</a>
                     </div>
                 </li>

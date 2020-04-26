@@ -43,7 +43,7 @@ include($product);
             <div class="row align-items-center mt-5 mt-md-0">
                 <div class="col-lg-6">
                     <h1 class="mb-4">Smart Shopping For Smart Home</h1>
-                    <a href="#" class="btn btn-primary px-4">Read More</a>
+                    <a href="about.php" class="btn btn-primary px-4">Read More</a>
                 </div>
 
                 <div class="col-lg-6">
@@ -104,7 +104,7 @@ include($product);
         </div>
 
         <div class="row justify-content-center my-5 pb-5 ">
-            <a href="# " class="btn btn-primary px-5 ">See More</a>
+            <a href="products.php" class="btn btn-primary px-5 ">See More</a>
         </div>
 
 
@@ -125,7 +125,7 @@ include($product);
                 </div>
 
                 <div class="col-lg-6 p-5 ">
-                    <h2 class="mb-4 ">Lorem ipsum dolor sit amet</h2>
+                    <h2 class="mb-4 ">We offer the latest, and greatest Smart Home Technology</h2>
                     <a href="# " class="btn btn-primary px-5 ">Read More</a>
                 </div>
 
@@ -140,7 +140,7 @@ include($product);
     <div class="container my-6 ">
         <div class="row align-items-center ">
             <div class="col-lg-6 p-5 ">
-                <h2 class="mb-4 ">Lorem ipsum dolor sit amet</h2>
+                <h2 class="mb-4 ">You can be sure all of your devices will work together</h2>
                 <a href="#" class="btn btn-primary ">Read More</a>
             </div>
 
@@ -158,22 +158,6 @@ include($product);
         <div class="container light-blue">
             <div class="row align-items-center justify-content-center ">
                 <div class="col-lg-6 text-center ">
-                    <h2>Get in touch</h2>
-                    <p class="py-3 ">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque in ab cumque cum molestiae reiciendis repellendus perferendis.
-                    </p>
-
-                    <div class="input-group mb-3 " id="get-in-touch">
-                        <input type="email" class="form-control light-blue " placeholder="Enter your e-mail here " aria-label="Recipient 's username" aria-describedby="basic-addon2">
-
-                        <div class="input-group-append" id="subscribe">
-                            <span class="input-group-text light-blue" id="basic-addon2">
-                                <img src="assets/img/send-message-icon.png" alt="send message icon">
-                            </span>
-                        </div>
-
-
-                    </div>
                 </div>
             </div>
 

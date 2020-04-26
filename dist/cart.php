@@ -33,8 +33,6 @@ include($product);
 
     <!-- MAIN HEADER NAVBAR -->
     <?php include($navigation); ?>
-    
-
 
     <!-- END OF MAIN HEADER NAVBAR -->
 

@@ -5,10 +5,7 @@ include($product);
 
 ?>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c0d7c58c54934e3cb0da4d27095131c4a0f3e641
 <!doctype html>
 <html lang="en">
 
@@ -89,23 +86,35 @@ include($product);
 
                     <h6>Categories</h6>
                     <ul class="nav flex-column">
-                        <li class="nav-item ">
-                            <a class="nav-link " href="# ">Cameras</a>
+                    <li class="nav-item ">
+                            <a class="nav-link " href="products.php">All</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="# ">Thermostats</a>
+                            <a class="nav-link " href="products.php?page=products&category=remote">Remotes</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="# ">Lighting</a>
+                            <a class="nav-link " href="products.php?page=products&category=outlet">Smart Outlets</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="# ">Sound & TV</a>
+                            <a class="nav-link " href="products.php?page=products&category=lighting">Lighting</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="# ">Wearables</a>
+                            <a class="nav-link " href="products.php?page=products&category=security">Security</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="# ">Locks</a>
+                            <a class="nav-link " href="products.php?page=products&category=thermostat">Thermostats</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="products.php?page=products&category=switch">Switches</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="products.php?page=products&category=cooking">Cooking</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="products.php?page=products&category=vacuum">Vacuums</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="products.php?page=products&category=fitness">Fitness</a>
                         </li>
                     </ul>
 
@@ -144,7 +153,12 @@ include($product);
                 <div class="row ">
 
                     <?php
-                        productListLoader("SELECT * FROM product ORDER BY productId DESC;", -1, "card col-lg-4");
+                          if(isset($_GET['category'])) {
+                            $category = filter_var($_GET["category"], FILTER_SANITIZE_STRING);
+                            productListLoader("SELECT * FROM product WHERE LOWER(productCategory) = '$category'", -1, "card col-lg-4");
+                          } else {
+                            productListLoader("SELECT * FROM product ORDER BY productId DESC;", -1, "card col-lg-4");
+                          }
                     ?>
 
                     <!-- PRODUCT CARD -->

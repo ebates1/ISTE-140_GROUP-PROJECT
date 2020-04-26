@@ -10,7 +10,7 @@
         <!-- Grid column -->
         <div class="col-md-4 mx-auto pr-5">
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis optio autem, quos exercitationem tempore, quo deleniti, perferendis provident ipsa hic excepturi dolorum modi laudantium. Voluptate dignissimos aliquid quam dicta quod!
+               SmartSolutions is a liscenced dealer in all of the products listed on our website. You can trust us to deliver the quality you would expect in a safe and timely manner.
             </p>
 
         </div>
@@ -25,36 +25,13 @@
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="#!">About</a>
+                    <a href="about.php">About</a>
                 </li>
                 <li>
-                    <a href="#!">Store</a>
+                    <a href="products.php">Store</a>
                 </li>
                 <li>
-                    <a href="#!">Blog</a>
-                </li>
-
-            </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-            <!-- Links -->
-
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#!">Payment</a>
-                </li>
-                <li>
-                    <a href="#!">Delivery</a>
-                </li>
-                <li>
-                    <a href="#!">Returns</a>
+                    <a href="blog.php">Blog</a>
                 </li>
 
             </ul>
@@ -71,7 +48,30 @@
 
             <ul class="list-unstyled">
                 <li>
-                    <a href="#!">Contact</a>
+                    <a href="payment.php">Payment</a>
+                </li>
+                <li>
+                    <a href="shipping.php">Delivery</a>
+                </li>
+                <li>
+                    <a href="return.php">Returns</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+            <!-- Links -->
+
+            <ul class="list-unstyled">
+                <li>
+                    <a href="contact.php">Contact</a>
                 </li>
 
             </ul>
