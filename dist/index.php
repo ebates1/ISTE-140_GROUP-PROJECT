@@ -99,7 +99,7 @@ include($product);
 
         <div class="row ">
         <?php
-            productListLoader("SELECT * FROM product ORDER BY productId DESC;", 10, "card col-lg-3 col-md-6");
+            productListLoader("SELECT * FROM product ORDER BY productId;", 10, "card col-lg-3 col-md-6");
         ?>
         </div>
 
