@@ -5,6 +5,10 @@ include($product);
 
 ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c0d7c58c54934e3cb0da4d27095131c4a0f3e641
 <!doctype html>
 <html lang="en">
 
@@ -139,122 +143,11 @@ include($product);
             <div class="col-lg-9 ">
                 <div class="row ">
 
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-1.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
+                    <?php
+                        productListLoader("SELECT * FROM product ORDER BY productId DESC;", -1, "card col-lg-4");
+                    ?>
 
                     <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-2.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-3.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-1.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-2.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-3.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-1.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-2.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
-
-                    <!-- PRODUCT CARD -->
-
-                    <div class="card col-lg-4 ">
-
-                        <img src="assets/img/product-3.png " class="card-img-top " alt="product image ">
-                        <div class="card-body ">
-                            <h6 class="card-title ">Long Multiline Product Title Goes Here</h6>
-                            <div class="product-price ">$ 199</div>
-                            <a href="# " class="product-link stretched-link ">Learn more >> </a>
-                        </div>
-
-                    </div>
                 </div>
             </div>
             <!-- END OF PRODUCTS RIGHT COLUMN -->
