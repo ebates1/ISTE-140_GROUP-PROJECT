@@ -5,7 +5,6 @@ include($product);
 
 ?>
 
-
 <!doctype html>
 <html lang="en">
 
