@@ -2,7 +2,7 @@
     function getProduct($id, $productName, $price, $imgPath, $size) {
         echo 
         "<div id='product-$id' class='$size'>
-            <img src= 'assets/img/$imgPath$id.png' class='card-img-top ' alt='product image ' + $productName>
+            <img src= 'assets/img/$imgPath$id.png' class='card-img-top ' alt='product image $productName'>
                 <div class='card-body '>
                     <h6 class='card-title '>$productName</h6>
                     <div class='product-price '>$ $price</div>
@@ -26,6 +26,7 @@
             }
         } else {
             echo "No products to load at this time. Please check back later!";
-        }    
+        }
+        $result->close();    
     }
 ?>

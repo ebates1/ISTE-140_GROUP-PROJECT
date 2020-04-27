@@ -5,8 +5,8 @@ include($product);
 ?>
 
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $elements = array('fname', 'lname', 'commentArea');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $elements = array('fname', 'lname', 'commentArea');
 
     // ensure we have all the form data
     foreach ($elements as $element) {
@@ -16,6 +16,9 @@ include($product);
         }
     }
 
+    $errors = [];
+
+    $flag = false;
     $fname = filter_var($_POST["fname"], FILTER_SANITIZE_STRING);
     $lname = filter_var($_POST["lname"], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
@@ -23,27 +26,80 @@ include($product);
     $message = filter_var($_POST["commentArea"], FILTER_SANITIZE_STRING);
     $captcha = $_POST['g-recaptcha-response'];
 
-        /** Google Captcha v2 */
-        $secretKey = '6Lc7ku4UAAAAAPzQbUyfUd77tAaXEQ7Q27awVI-y';
-        $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
-        $response = file_get_contents($url);
-        $responseKeys = json_decode($response,true);
+    /** Google Captcha v2 */
+    $secretKey = '6Lc7ku4UAAAAAPzQbUyfUd77tAaXEQ7Q27awVI-y';
+    $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+    $response = file_get_contents($url);
+    $responseKeys = json_decode($response, true);
 
-        $mysqli = retrieveConnectionToDB();
-
-        $sql = "INSERT INTO `smartsolutionscontact` (`firstName`, `lastName`, `email`, `phone`, `messageText`) VALUES (?, ?, ?, ?, ?);";
+    if (trim($fname) === '' || strlen($fname) > 30) {
+        array_push($errors, 'First name must contain a value and be less than 30 chars.');
+      }
     
-        $stmt = $mysqli->prepare($sql);
+      if (trim($lname) === '' || strlen($lname) > 30) {
+        array_push($errors, 'Last name must contain a value and be less than 30 chars.');
+      }
     
-        $stmt->bind_param("sssss", $fname, $lname, $email, $phone, $message);
+      if (trim($message) === '' || strlen($message) > 255) {
+        array_push($errors, 'Message must contain a value and be less than 255 chars.');
+      }
+    
+      if (trim($phone) === '' || strlen($phone) > 30) {
+        array_push($errors, 'Phone must contain a value and be less than 30 chars.');
+      }
+    
+      if (trim($email) === '' || strlen($phone) > 30) {
+        array_push($errors, 'Email must contain a value and be less than 30 chars.');
+      }
+      
+        // If errors array is not empty it means that we have some errors
+  if(!empty($errors)) {
+    $message = "Something went wrong!";
 
-        if(!$stmt->execute()) {
-            $modal = "
+    foreach($errors as $error) {
+      $message .= "<br>$error";
+    }
+
+    $modal = "
+    <div class='modal fade' id='successModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='exampleModalLongTitle'>Unable to complete request!</h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body'>
+            Execute failed: {$message}
+          </div>
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ";
+    $flag = true;
+  }
+
+    if (!$flag) {
+
+    $mysqli = retrieveConnectionToDB();
+
+    $sql = "INSERT INTO `smartSolutionsContact` (`firstName`, `lastName`, `email`, `phone`, `messageText`) VALUES (?, ?, ?, ?, ?);";
+
+    $stmt = $mysqli->prepare($sql);
+
+    $stmt->bind_param("sssss", $fname, $lname, $email, $phone, $message);
+
+    if (!$stmt->execute()) {
+        $modal = "
               <div class='modal fade' id='successModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
                 <div class='modal-dialog modal-dialog-centered' role='document'>
                   <div class='modal-content'>
                     <div class='modal-header'>
-                      <h5 class='modal-title' id='exampleModalLongTitle'>Order save failed!</h5>
+                      <h5 class='modal-title' id='exampleModalLongTitle'>Unable to complete request!</h5>
                       <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                       </button>
@@ -58,8 +114,8 @@ include($product);
                 </div>
               </div>
             ";
-          } else {
-            $modal = "
+    } else {
+        $modal = "
               <div class='modal fade' id='successModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
                 <div class='modal-dialog modal-dialog-centered' role='document'>
                   <div class='modal-content'>
@@ -79,9 +135,10 @@ include($product);
                 </div>
               </div>
             ";
-          }
-          $mysqli->close();
     }
+    $mysqli->close();
+}
+}
 
 ?>
 
@@ -219,10 +276,10 @@ include($product);
     <?php include($bootstrapScripts); ?>
 
     <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                echo $modal;
-                echo "<script>$('#successModal').modal('show');</script>";
-            }
+    if ($_SERVER["REQUEST_METHOD"] == "POST" || $flag)   {
+        echo $modal;
+        echo "<script>$('#successModal').modal('show');</script>";
+    } 
     ?>
 
     <!-- Custom javaScript -->

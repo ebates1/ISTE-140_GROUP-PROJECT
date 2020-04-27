@@ -63,16 +63,16 @@ include($product);
                 <!-- ONE BLOG POST START -->
                 <div class="col-sm-6 col-lg-4 p-5 p-sm-3">
                     <img src="assets/img/blogimages/blog-image1.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h6>
-                    <a class="btn btn-primary px-4 " href="# ">Read more</a>
+                    <h6 class="mb-3 ">Why will a Smart Home be the norm sooner than you think</h6>
+                    <a class="btn btn-primary px-4 " href="blog1.php">Read more</a>
                 </div>
                 <!-- ONE BLOG POST END -->
 
                 <!-- ONE BLOG POST START -->
                 <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
                     <img src="assets/img/blogimages/blog-image2.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h6>
-                    <a class="btn btn-primary px-4 " href="# ">Read more</a>
+                    <h6 class="mb-3 ">Why you need to make your home a Smart Home.</h6>
+                    <a class="btn btn-primary px-4 " href="blog2.php">Read more</a>
                 </div>
                 <!-- ONE BLOG POST END -->
 
@@ -80,32 +80,8 @@ include($product);
                 <!-- ONE BLOG POST START -->
                 <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
                     <img src="assets/img/blogimages/blog-image3.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h6>
-                    <a class="btn btn-primary px-4 " href="# ">Read more</a>
-                </div>
-                <!-- ONE BLOG POST END -->
-
-                <!-- ONE BLOG POST START -->
-                <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
-                    <img src="assets/img/blogimages/blog-image4.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h6>
-                    <a class="btn btn-primary px-4 " href="# ">Read more</a>
-                </div>
-                <!-- ONE BLOG POST END -->
-
-                <!-- ONE BLOG POST START -->
-                <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
-                    <img src="assets/img/blogimages/blog-image5.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
-                    <a class="btn btn-primary px-4 " href="# ">Read more</a>
-                </div>
-                <!-- ONE BLOG POST END -->
-
-                <!-- ONE BLOG POST START -->
-                <div class="col-sm-6 col-lg-4 p-5 p-sm-3 ">
-                    <img src="assets/img/blogimages/blog-image6.jpg " class="img-fluid mb-2 rounded " alt="Responsive image ">
-                    <h6 class="mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
-                    <a class="btn btn-primary px-4 " href="cart.php">Read more</a>
+                    <h6 class="mb-3 ">Smart home technology you may not have heard of</h6>
+                    <a class="btn btn-primary px-4 " href="blog3.php">Read more</a>
                 </div>
                 <!-- ONE BLOG POST END -->
 
